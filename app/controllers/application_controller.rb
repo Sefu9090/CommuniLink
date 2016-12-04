@@ -57,6 +57,10 @@ class ApplicationController < Sinatra::Base
     erb :openDataEvents 
   end
   
+  get "/about" do
+    erb :about
+  end
+  
   post '/openDataEvents' do
     @numberOfEvents = NUMBER_OF_EVENTS
     @results = getData
